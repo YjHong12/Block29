@@ -25,7 +25,7 @@ export default function SinglePlayer() {
   return (
     <div>
       <h2>Player Details</h2>
-      {player && (
+      {player ? (
         <>
           <h3>{player.name}</h3>
           <p><img src={player.imageUrl}></img></p>
@@ -33,7 +33,7 @@ export default function SinglePlayer() {
           <p>Breed: {player.breed}</p>
           <p>Status: {player.status}</p>
         </>
-      )}
+      ) : null }
     </div>
   );
 }
