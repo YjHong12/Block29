@@ -19,7 +19,7 @@ export default function AllPlayers() {
   }, []);
 
   return (
-    <div>
+    <div className = "main">
       {players.map((player) => {
         return (
           <li key={player.id}>
