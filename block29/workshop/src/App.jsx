@@ -11,18 +11,20 @@ function App() {
 
   return (
     <div>
-
       <BrowserRouter>
-      <div id="navbar">
+        <div id="navbar">
           <NavBar />
         </div>
+
+        <div id="form">
+          <NewPlayerForm />
+        </div>
+
         <Routes>
           <Route path="/" element={<AllPlayers />} />
           <Route path="/players/:id" element={<SinglePlayer />} />
         </Routes>
       </BrowserRouter>
- 
-      <NewPlayerForm />
     </div>
   );
 }

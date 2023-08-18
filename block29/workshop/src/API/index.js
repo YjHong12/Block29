@@ -17,8 +17,7 @@ async function FetchPlayers() {
     console.error("Trouble fetching players", error);
   }
 
-  return 
-
+  return;
 }
 
 export default FetchPlayers;
